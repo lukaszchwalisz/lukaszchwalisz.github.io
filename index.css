@@ -1,12 +1,12 @@
 body { 
- background-color: green;
+ background-color:lightgreen;
    }
 
-h2, p, a {color: black;
+h2, p, a {color:black;
 font-family: sans-serif;}
 h2, p {text-align: center;}
 
-p2 {color:black; background-color: yellow;}
+p2 {color:black; background-color:yellow;}
 
 img {
     height: 300px;
