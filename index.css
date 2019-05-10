@@ -1,6 +1,7 @@
 body { 
- background-color:lightgreen;
-   }
+ background-image: url(./tapeta/black-wallpaper-wallpaper-3.jpg);
+ background-repeat: no-repeat; 
+}
 
 h2, p, a {color:black;
 font-family: sans-serif;}
