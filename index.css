@@ -1,9 +1,8 @@
 body { 
- background-image: green;
- background-repeat: repeat; 
-  }
+ background-color: green;
+   }
 
-h2, p, a {color: white;
+h2, p, a {color: black;
 font-family: sans-serif;}
 h2, p {text-align: center;}
 
