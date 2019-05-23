@@ -1,40 +1,176 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Łukasz's bookmark page</title>
-<link href="index.css" rel="stylesheet" >
-<head><title>Strona startowa 0.3</title>
+  <title>Strona powitalna</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 
 <body>
-<h2>Łukasz's bookmark page</h2>
 
-<p>Social Media | 
-<a href="https://www.facebook.com/" target="_blank">Facebook</a> ,
-<a href="https://www.youtube.com/?hl=pl&gl=PL" target="_blank">YouTube</a> ,
-<a href="https://www.instagram.com/" target= "_blank">Instagram</a> ,
-<a href="https://twitter.com/?lang=pl" target="_blank">Twitter</a> </p>
+<div class="jumbotron text-center bg-light"  style="margin-bottom:0px">
+  <h1>Strona powitalna</h1>
+  <p>w ciągłej budowie</p> 
+</div>
+    
+<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+  <a class="navbar-brand " href="#" >Moje zakładki</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.youtube.com/?hl=pl&gl=PL" target="_blank">Youtube</a>
+      </li>  
+        
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/?lang=pl" target="_blank">Twitter</a>
+      </li>    
+        <li class="nav-item">
+        <a class="nav-link" href="https://tinder.com/" target="_blank">Tinder</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.reddit.com/" target="_blank"> Reddit</a>
+      </li>          
+      </ul>
+  </div>  
+</nav>
+<div class="container">
+  <div class="alert alert-success alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Nowa wersja strony!</strong> Zobacz jakich dokonałem zmian.
+        </div>
+    </div>    
 
-<p> Blog |
-<a href="https://mobbingpoznanosa.wordpress.com/" target="_blank">OSA Poznań</a> ,
-<a href="https://lechaimed.wordpress.com/" target="_blank">Lechaim Gabinet</a> </p>
-
-<p> Poczta |
-<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a> ,
-<a href="https://profil.wp.pl/login.html" target="_blank">Poczta WP</a> </p>
-
-<p> Filmy/Seriale |
-<a href="https://www.netflix.com/browse" target="_blank">Netflix</a>  ,
-<a href="https://hbogo.pl/" target="_blank">Hbo GO</a> ,
-  <a href="https://www.cda.pl/" target="_blank">Cda</a> </p>
 
 
-<center><a href="https://duckduckgo.com/" target="_blank"> <img src="./gif/slowmotionrain.gif" n/>
-</center>
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    
+      
+  <div class="col-sm-4">
+   
+     <h3>Poczta</h3>    
+  <a href="https://mail.google.com/mail/u/0/#inbox" class="list-group-item list-group-item-action" target="_blank">gmail.com</a>
+  <a href="https://profil.wp.pl/login.html?zaloguj=poczta" class="list-group-item list-group-item-action" target="_blank">poczta.wp.pl</a>
+  <a href="https://ctemplar.com/signin" class="list-group-item list-group-item-action" target="_blank">ctemplar.com</a>
+  <a href="https://mail.riseup.net/rc/" class="list-group-item list-group-item-action" target="_blank">riseup.net</a>    </div>
+      
+    <div class="col-sm-4">
+      <h3>Banki</h3>
+      
+      <a href="https://santander.pl/" class="list-group-item list-group-item-action" target="_blank">Santander</a>
+      <a href="https://www.mbank.pl/indywidualny/" class="list-group-item list-group-item-action" target="_blank">mBank</a> 
+       </div>
+      
 
-<p><a href="bootstrap.html">>></a></p>
+       <div class="col-sm-4">
+           <h3>Oferty pracy</h3>        
+      
+        <a href="https://ogloszenia.ngo.pl/" class="list-group-item list-group-item-action" target="_blank">Ogłoszenia ngo.pl</a>
+        <a href="http://oferty.praca.gov.pl/" class="list-group-item list-group-item-action" target="_blank">Centralna Baza Ofert Pracy</a>
+        <a href="https://www.olx.pl/" class="list-group-item list-group-item-action" target="_blank">OLX</a>
+        <a href="https://www.gumtree.pl/" class="list-group-item list-group-item-action" target="_blank">Gumtree</a>
+      </div>
+        
+    </div> 
+    
+</div>
+      <div class="container" style="margin-top:30px">
+          <div class="row"> 
+  
+      
+      <div class="col-sm-4">
+      <h3>Psychoterapia</h3>
+      
+	<a href="http://analizajungowska.pl/" class="list-group-item list-group-item-action" target="_blank">Polskie Towarzystwo Psychoanalizy Jungowskiej - PTPJ</a>
+	<a href="http://ptpajung.pl/" class="list-group-item list-group-item-action" target="_blank">Polskie Towarzystwo Psychologii Analitycznej - PTPA</a>
+	<a href="https://iaap.org/" class="list-group-item list-group-item-action" target="_blank">International Association for Analytical Psychology - IAAP</a>
+	<a href="https://raven.edu.pl/" class="list-group-item list-group-item-action" target="_blank">Instytut Raven</a>
+    <a href="https://carljungdepthpsychologysite.blog/" class="list-group-item list-group-item-action" target="_blank">Carl Jung Depth Psychology Site</a>
+      
+    </div>
 
-</body> 
+       
+      <div class="col-sm-4">
+    
+     <h3>Sąd</h3>
+              
+      
+       <a href="https://www.saos.org.pl/" class="list-group-item list-group-item-action" target="_blank">System Analizy Orzeczeń Sądowych</a>
+       <a href="https://orzeczenia.ms.gov.pl/" class="list-group-item list-group-item-action" target="_blank">Portal Orzeczeń Sądów Powszechnych</a>
+    
+      </div>
+
+  
+
+     <div class="col-sm-4">
+         <h3>Programowanie</h3>
+        <a href="https://www.github.com/" class="list-group-item list-group-item-action" target="_blank">Github</a>
+        <a href="https://www.w3schools.com/" class="list-group-item list-group-item-action" target="_blank">w3schools</a>
+        <a href="https://www.freecodecamp.org/" class="list-group-item list-group-item-action" target="_blank">freecodecamp</a>
+        <a href="https://www.codecademy.com/" class="list-group-item list-group-item-action" target="_blank">codecademy.com</a>
+        
+        
+       </div>
+ 
+      
+
+   </div>
+</div>
+    
+    <div class="container" style="margin-top:30px">
+        <div class="row"> 
+    
+      <div class="col-sm-3">
+       <h3>Filmy, seriale</h3>        
+      
+         <a href="https://www.netflix.com/browse" class="list-group-item list-group-item-action" target="_blank">Netflix</a>
+         <a href="https://hbogo.pl/" class="list-group-item list-group-item-action" target="_blank">Hbo GO</a>
+         <a href="https://www.cda.pl/" class="list-group-item list-group-item-action" target="_blank">Cda</a> 
+       </div>
+
+      <div class="col-sm-3">
+       <h3>Blogi</h3>        
+      
+         <a href="https://mobbingpoznanosa.wordpress.com/" class="list-group-item list-group-item-action" target="_blank">OSA Mobbing</a> 
+         <a href="https://lechaimed.wordpress.com/" class="list-group-item list-group-item-action" target="_blank">Lechaim gabinet</a>         
+      </div>
+      
+      <div class="col-sm-3">
+      <h3>WWW</h3>        
+      <a href="https://lukaszchwalisz.github.io/index.html" class="list-group-item list-group-item-action" target="_blank">lukaszchwalisz.github.io</a> 
+            
+      </div> 
+        
+             <div class="col-sm-3">
+      <h3>WWW</h3>        
+      <a href="https://lukaszchwalisz.github.io/index.html" class="list-group-item list-group-item-action" target="_blank">lukaszchwalisz.github.io</a> 
+            
+      </div>
+            
+            
+    </div>
+  </div>
+    
+    <div class="jumbotron text-center bg-light" style="margin-bottom:0px"> 
+      <p> © 2019 Łukasz Chwalisz. <a href="http://gnu.org.pl/text/licencja-gnu.html" target="_blank">GNU General Public License (GPL). </a>
+      </p>
+    </div>
+    
+    </body>
+
 </html>
