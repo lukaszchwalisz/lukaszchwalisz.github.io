@@ -1,0 +1,16 @@
+body {
+        margin-left: 100px;
+        margin-right: 100px;
+        background-image: url(./img/cegla.jpg);
+    background-size: cover;
+    background-repeat: yes;
+}
+
+h3 { color:dark;
+}
+.jumbotron {
+	margin-top: 10px;
+	background-image: url(./img/flowers.jpg);
+        background-size: cover;
+        color:white;
+}
