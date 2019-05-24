@@ -6,12 +6,12 @@ body {
     background-repeat: yes;
 }
 
-h3 { color:royalblue;
+h3 { color:darkblue;
 }
 .jumbotron {
 	margin-top: 0px;
 	background-image: url(./img/flowers.jpg);
         background-size: cover;
-        color:white;
+        color:cadetblue;
 }
 #footer { margin-top: 50px; }
