@@ -6,7 +6,7 @@ body {
     background-repeat: yes;
 }
 
-h3 { color:dark;
+h3 { color:royalblue;
 }
 .jumbotron {
 	margin-top: 0px;
@@ -14,3 +14,4 @@ h3 { color:dark;
         background-size: cover;
         color:white;
 }
+#footer { margin-top: 50px; }
