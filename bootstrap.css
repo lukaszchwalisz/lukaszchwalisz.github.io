@@ -1,7 +1,7 @@
 body {
         margin-left: 0px;
         margin-right: 0px;
-        background-image: url(./img/cegla.jpg);
+        background-color: khaki;
     background-size: cover;
     background-repeat: yes;
 }
@@ -10,7 +10,7 @@ h3 { color:darkblue;
 }
 .jumbotron {
 	margin-top: 0px;
-	background-image: url(./img/flowers.jpg);
+	background-color:lightyellow;
         background-size: cover;
         color:cadetblue;
 }
