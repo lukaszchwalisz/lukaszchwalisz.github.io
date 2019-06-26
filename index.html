@@ -1,155 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Strona powitalna 0.4</title>
+  <title>Gabinet Łukasz Chwalisz</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="bootstrap.css">
-</head>
-
+  <link rel="stylesheet" href="gabinet.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=latin-ext" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
 <body>
-    
-<nav class="navbar navbar-expand-sm bg-warning navbar-light">
-  <a class="navbar-brand " href="#" ><img src="./ico/duckduckgo.png" alt="logo" style="width:40px;"></a>
-    <iframe src="https://duckduckgo.com/search.html?prefill=Search DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        
-  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/" target="_blank"><img src="./ico/facebook.png" alt="logo" style="width:40px;"></a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="https://www.youtube.com/?hl=pl&gl=PL" target="_blank"><img src="./ico/youtube.png" alt="logo" style="width:40px;"></a>
-      </li>  
-        
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.instagram.com/" target="_blank"><img src="./ico/instagram.png" alt="logo" style="width:40px;"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://twitter.com/?lang=pl" target="_blank"><img src="./ico/twitter.png" alt="logo" style="width:40px;"></a>
-      </li>    
-        <li class="nav-item">
-        <a class="nav-link" href="https://tinder.com/" target="_blank"><img src="./ico/tinder1.png" alt="logo" style="width:40px;"></a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="https://www.reddit.com/" target="_blank"><img src="./ico/reddit.png" alt="logo" style="width:40px;"></a>
-      </li>          
-      </ul>
-  </div>  
-</nav>
-	
-<div class="container" style="margin-top:30px">
-  <div class="row">
-          
-  <div class="col-sm-4">
+
+<div id="pojemnik">  
+  <div id="bialy"></div>
+  <div id="czarny"></div>
+  <script>
    
-     <h3>Poczta</h3>    
-  <a href="https://mail.google.com/mail/u/0/#inbox" class="list-group-item list-group-item-action" target="_blank">Gmail</a>
-  <a href="https://profil.wp.pl/login.html?zaloguj=poczta" class="list-group-item list-group-item-action" target="_blank">Poczta wp.pl</a>
-  <a href="https://ctemplar.com/signin" class="list-group-item list-group-item-action" target="_blank">Ctemplar</a>
-  <a href="https://mail.riseup.net/rc/" class="list-group-item list-group-item-action" target="_blank">Riseup</a>    </div>
-      
-    <div class="col-sm-4">
-      <h3>Banki</h3>
-      
-      <a href="https://santander.pl/" class="list-group-item list-group-item-action" target="_blank">Santander</a>
-      <a href="https://www.mbank.pl/indywidualny/" class="list-group-item list-group-item-action" target="_blank">mBank</a> 
-       </div>
-      
+    $(document).ready(function(){
+  
+  $("#czarny").on({
+  
+    click: function(){
+      $("body").css("background-color", "black");
+      $("div").css("border-color", "white");
+      $("h4").css("color", "white");
+      $("h2, h3").css("color", "yellow");
+      $("li, p, a").css("color", "white");
+      $("#fbico").css("background-color", "darkgrey");
+      $(".header").css("background-color", "darkgrey");
+                 
+     }  
+  });
 
-       <div class="col-sm-4">
-           <h3>Oferty pracy</h3>        
-      
-        <a href="https://ogloszenia.ngo.pl/" class="list-group-item list-group-item-action" target="_blank">Ogłoszenia ngo.pl</a>
-        <a href="http://oferty.praca.gov.pl/" class="list-group-item list-group-item-action" target="_blank">Centralna Baza Ofert Pracy</a>
-        <a href="https://www.olx.pl/" class="list-group-item list-group-item-action" target="_blank">OLX</a>
-        <a href="https://www.gumtree.pl/" class="list-group-item list-group-item-action" target="_blank">Gumtree</a>
-      </div>
+$("#bialy").on({
+  
+    click: function(){
+      $("body").css("background-color", "white");
+      $("div").css("border-color", "black");
+      $("h4, h3, h2, li, p, a").css("color", "black");
+      $("#fbico").css("background-color", "aliceblue");
+      $(".header").css("background-color", "yellow");       
+     }  
+  });
+
+});
+
+</script>
+
+    <div class="navbar">
+      <a href="index.html"><div class="gabinet">Gabinet</div></a>
+      <a href="omnie.html"><div class="gabinet">O mnie</div></a>
+      <a href="psychoterapia.html"><div class="gabinet">Psychoterapia</div></a>
+      <a href="warsztaty.html"> <div class="gabinet">Warsztaty</div> </a>
+      <a href="artykuly.html"> <div class="gabinet">Artykuły</div></a>
+      <a href="wydarzenia.html"><div class="gabinet">Wydarzenia</div></a>
+    </div>
         
-    </div> 
-    
-</div>
-      <div class="container" style="margin-top:30px">
-          <div class="row"> 
-  
-      
-      <div class="col-sm-4">
-      <h3>Psychoterapia</h3>
-      
-	<a href="http://analizajungowska.pl/" class="list-group-item list-group-item-action" target="_blank">Polskie Towarzystwo Psychoanalizy Jungowskiej - PTPJ</a>
-	<a href="http://ptpajung.pl/" class="list-group-item list-group-item-action" target="_blank">Polskie Towarzystwo Psychologii Analitycznej - PTPA</a>
-	<a href="https://iaap.org/" class="list-group-item list-group-item-action" target="_blank">International Association for Analytical Psychology - IAAP</a>
-	<a href="https://raven.edu.pl/" class="list-group-item list-group-item-action" target="_blank">Instytut Raven</a>
-    <a href="https://carljungdepthpsychologysite.blog/" class="list-group-item list-group-item-action" target="_blank">Carl Jung Depth Psychology Site</a>
-      
-    </div>
+    <div style="clear:both"></div>
 
-       
-      <div class="col-sm-4">
-    
-     <h3>Sąd</h3>
-              
-    
-       <a href="https://www.saos.org.pl/" class="list-group-item list-group-item-action" target="_blank">System Analizy Orzeczeń Sądowych</a>
-       <a href="https://orzeczenia.ms.gov.pl/" class="list-group-item list-group-item-action" target="_blank">Portal Orzeczeń Sądów Powszechnych</a>
-       <a href="https://www.poznan.so.gov.pl/" class="list-group-item list-group-item-action" target="_blank">Sąd Okręgowy w Poznaniu</a>
-	      
-      </div>
-
-  
-
-     <div class="col-sm-4">
-         <h3>Programowanie</h3>
-        <a href="https://www.github.com/" class="list-group-item list-group-item-action" target="_blank">Github</a>
-        <a href="https://www.w3schools.com/" class="list-group-item list-group-item-action" target="_blank">w3schools</a>
-        <a href="https://developer.mozilla.org/pl/" class="list-group-item list-group-item-action" target="_blank">MDN moz://a</a>             
-         <a href="https://miroslawzelent.pl/" class="list-group-item list-group-item-action" target="_blank">Mirosław Zelent</a>
-       </div>
-       
-
-   </div>
-</div>
-    
-    <div class="container" style="margin-top:30px">
-        <div class="row"> 
-    
-      <div class="col-sm-3">
-       <h3>Filmy, seriale</h3>        
-      
-         <a href="https://www.netflix.com/browse" class="list-group-item list-group-item-action" target="_blank">Netflix</a>
-         <a href="https://hbogo.pl/" class="list-group-item list-group-item-action" target="_blank">Hbo GO</a>
-         <a href="https://www.cda.pl/" class="list-group-item list-group-item-action" target="_blank">Cda</a> 
-       </div>
-
-      <div class="col-sm-3">
-       <h3>Blogi</h3>        
-      
-         <a href="https://mobbingpoznanosa.wordpress.com/" class="list-group-item list-group-item-action" target="_blank">OSA Mobbing</a> 
-         <a href="https://lechaimed.wordpress.com/" class="list-group-item list-group-item-action" target="_blank">Lechaim gabinet</a>         
-      </div>
-      
-      <div class="col-sm-3">
-      <h3>WWW</h3>        
-      <a href="https://lukaszchwalisz.github.io/index.html" class="list-group-item list-group-item-action" target="_blank">Strona powitalna 0.4</a> 
-     <a href="file:///home/lukaszc/Dropbox/WWW/gabinet/index.html" class="list-group-item list-group-item-action" target="_blank">Gabinet Łukasz Chwalisz</a>        
-      </div> 
-                     
-            
-    </div>
+<div class="header">
+   <div id="cytat">
+    <h2> "Nieświadomość jest starsza od świadomości. Jest pierwotnym stanem, z którego ciągle na 
+    nowo wyłania się świadomość" </h2>
+    <p>C. G. Jung "Kindertraumseminar, 1938/1939"</p>
   </div>
-    
-    <div class="jumbotron text-center bg-light" style="margin-bottom:0px" id="footer"> 
-      <p> © 2019 Łukasz Chwalisz. <a href="http://gnu.org.pl/text/licencja-gnu.html" target="_blank">GNU General Public License (GPL). </a>
-      </p>
-    </div>
-    
-    </body>
+</div>
 
+
+<div id="lewyobr"> 
+    <img src="./obr/monument.jpg" alt="monument" width="100%"> 
+  </div>
+
+
+<div id="tresc">
+
+    <h2>Witam serdecznie !</h2>
+    <p>Zapraszam do zapoznania się z informacjami o mnie, o mojej pracy, z moimi przemyśleniami oraz z kontaktem ze mną.</p>
+    <p>Na wstępie chciałbym przedstawić <strong>zasady</strong> obowiązujące w moim gabinecie psychologicznym:</p>
+    <ul> 
+    <li>prowadzę psychoterapię zgodną ze standardami psychologii analitycznej C. G. Junga</li>
+    <li>pracuję pod regularną superwizją</li>
+    <li>kilka pierwszych sesji prowadzi do rozpoznania kierunku dalszego działania</li>
+    <li>kiedy pacjenci zdecydują się na regularną pracę terapeutyczną, proponuję podpisanie kontraktu terapeutycznego,określającego warunku współpracy, sprawy techniczne odnośnie sesji i płatności, prawa i obowiązki pacjentów i terapeuty (dołączam obowiązkową klauzulę RODO)</li>
+    <li>zakończenie terapii zależne jest od decyzji pacjentów lub terapeuty - zalecam, aby temu poświęcić osobną sesję terapeutyczną</li>
+    <li>pojedyncza sesja trwa 50 minut</li>
+    </ul>
+    <h3>Kontakt.</h3> 
+    <ul>
+       <li>lukasz.chwalisz@gmail.com</li>
+       <li>+48 665 696 372</li>
+       <li>skypeID: lukaszchwalisz</li>
+    </ul>
+    <h3>Adres korespondencyjny:</h3>
+      
+      <p>Gabinet psychologiczny Łukasz Chwalisz
+      60-803 Poznań, ul. Polna 74/9, NIP 7792237217</p>
+
+    <h3>Gabinet.</h3>
+    <p>Obecnie przyjmuję w gabinetach w Poznaniu dzięki uprzejmości <a href="https://www.pracowniakreska.com" style="text-align: left;">Pracowni Rozwoju Osobistego "Kreska".</a></p>
+     <ul>
+      <li>ul. Grunwaldzka 37a/15</li>
+      <li>ul. Marcelińska 62b/23</li>
+     </ul>
+    <p>Rezerwacja telefoniczna lub mailowa.</p>
+
+ </div>
+
+    
+  
+    <div style="clear:both"></div>   
+        
+    <footer> 
+      <div id="fbico">
+        <a href="https://www.facebook.com/psychoterapeuta.lukaszchwalisz/" target="_blank"><img src="./obr/fb.png" alt="fb"></a>
+        <p> © 2019 Łukasz Chwalisz. <a href="http://gnu.org.pl/text/licencja-gnu.html" target="_blank">GNU General Public License (GPL). </a>
+        </p>
+      </div>
+    
+    </footer>   
+    
+ </div>
+
+             
+</body>
 </html>
+
