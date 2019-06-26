@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gabinet Łukasz Chwalisz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="gabinet.css">
+ <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=latin-ext" rel="stylesheet"> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+  <body>
+  <div id="pojemnik">  
+      <div id="bialy"></div>
+      <div id="czarny"></div>
+      <script>
+        $(document).ready(function(){
+      $("#czarny").on({
+      
+        click: function(){
+          $("body").css("background-color", "black");
+          $("div").css("border-color", "white");
+          $("navbar, h4").css("color", "black");
+          $("h2, h3").css("color", "yellow");
+          $("li, p, a").css("color", "white");
+          $("#fbico").css("background-color", "darkgrey");
+          $(".header").css("background-color", "darkgrey");       
+         }  
+      });
+  $("#bialy").on({
+
+    click: function(){
+      $("body").css("background-color", "white");
+      $("div").css("border-color", "black");
+      $("h4, h3, h2, li, p, a").css("color", "black");
+      $("#fbico").css("background-color", "aliceblue");
+      $(".header").css("background-color", "yellow");           
+     }  
+  });
+
+});
+</script>   
+      <div class="navbar">
+            <a href="index.html"><div class="gabinet">Gabinet</div></a>
+            <a href="omnie.html"><div class="gabinet">O mnie</div></a>
+            <a href="psychoterapia.html"><div class="gabinet">Psychoterapia</div> </a>
+            <a href="warsztaty.html"> <div class="gabinet">Warsztaty</div> </a>
+            <a href="artykuly.html"> <div class="gabinet">Artykuły</div></a>
+            <a href="wydarzenia.html"><div class="gabinet">Wydarzenia</div></a>
+        </div>
+<div class="header">
+   <div id="cytat">
+    <h3> "Uderzyło mnie, że starsze pokolenie zdefiniowało dorastanie w taki sposób. Jeśli proces stawania się tym, kim jesteś i kim będziesz, określa się mianem "kryzysu tożsamości", zjawisko to zaczyna budzić lęk. Dlaczego zadawanie sobie pytania: "Kim jestem?", uznaje się za przejaw kryzysu?"</h3>
+    <p>Kim Gordon, "Dziewczyna z zespołu"</p>
+  </div>
+</div>
+   
+        
+<div id="lewyobr"><img src="./obr/jung0.jpg" alt="karykatura" width="100%">     </div>
+
+
+<div id="tresc">
+
+       <h2>Wydarzenia.</h2>
+    <p> Najnowsze wydarzenia z życia gabinetu.</p>
+  <hr>
+  
+ <ul>
+  <li><h3>"Obrazy nieświadomości – jungowskie metody pracy z psychiką"
+          - konferencja PTPJ 2019.</h3> 
+      <p>W ramach konferencji przeprowadzę warsztat "Symbolic constellations" autorstwa Martina Skali wraz z
+         socjoterapeutką mgr Luizą Niedźwiecką.</p>
+      <p>Termin: 6 października 2019 r., Kraków</p>
+      <p>Zapisy: <a href="http://analizajungowska.pl/rejestracja-konf-2019/">Rejestracja na konferencję</a>
+         </p>
+         <img src="./obr/konf2019b.jpg" alt="konferencja PTPJ 2019" width="100%"> 
+
+  </li>
+
+ </ul>
+
+ </div>
+
+  <div style="clear:both"></div>   
+    
+  <footer> 
+      <div id="fbico">
+        <a href="https://www.facebook.com/psychoterapeuta.lukaszchwalisz/" target="_blank"><img src="./obr/fb.png" alt="fb"></a>
+        <p> © 2019 Łukasz Chwalisz. <a href="http://gnu.org.pl/text/licencja-gnu.html" target="_blank">GNU General Public License (GPL). </a>
+        </p>
+      </div>
+    
+    </footer>  
+
+    </div>  
+    
+ </div>
+
+             
+</body>
+</html>

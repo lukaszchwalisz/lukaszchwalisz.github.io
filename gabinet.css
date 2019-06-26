@@ -1,0 +1,182 @@
+body {
+    margin:0px;
+    padding:0px;
+    /* background-color:#FFF5EE; */
+    display: inline;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+}
+
+div {
+    padding: 0px;
+    margin-bottom:0px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* nowy navbar */
+.navbar { 
+display: flex;
+justify-content:center;
+padding: 0em;
+}
+
+.gabinet {
+ /* margin-right: 1em; */
+  padding: 14px 16px;
+  font-size: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+
+}
+
+/*.gabinet:hover {
+  background-color:yellow;
+  color:black;
+}*/
+
+.navbar a {
+  text-decoration:none;
+  color:#111;
+}
+
+.navbar h4 {
+ margin: 0;
+ padding: 0;
+}
+
+#bialy {
+float: inline-end ; 
+width: 1em;
+height:1em;
+border-color: black;
+border: 1px solid;
+border-radius: 50%;
+background-color: white;
+margin-top: 1.5em;
+margin-right: 1em;
+}
+
+#czarny {
+  float: inline-end; 
+  width: 1em;
+  height:1em;
+  border-color: black;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 1.5em;
+  margin-right: 0em;
+}
+
+/* główka*/
+.header {
+  margin-top: 0px;
+  background-color: yellow;
+}
+
+#cytat {
+  text-align:center;
+  padding: 20px;
+  position: relative;
+  display: block;
+  justify-content: center;
+ }
+
+/* stopka */ 
+
+#fbico p {
+  margin-top: 0em;
+  margin-bottom: 0;
+  padding: 1em; 
+  color: black;
+  text-align: center;
+  }
+
+#fbico a {
+  color:black;
+  }
+
+#fbico img {
+   width: 3%;
+   margin-top: 20px;
+}
+
+#fbico  {
+  text-align: center;
+  background-color: aliceblue;
+}
+
+/* lewy obrazek */
+#lewyobr {
+    float:left;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 210px;
+    margin-right: 20px;
+}
+
+/* tekst na stronie */ 
+
+
+#tresc {
+    float: left;
+    text-align: justify;
+    width: 700px;
+    margin-left: 30px;
+}
+
+#tresc ul li {
+    list-style-type: circle;
+}
+
+#tresc a {
+    color:black;
+    display:block;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*obrazy na stronie */
+
+#klocki {
+    float: left;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+/*
+.box-shadow {
+  width: 220px;
+  padding: 15px;
+  box-shadow: 5px 5px 5px lightgrey;
+  opacity:1;
+  text-align:center;
+  border: 1px solid gray;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.box-shadow:hover {
+      box-shadow: 15px 15px 15px lightgrey;
+      opacity:.8;
+     }
+*/
+
+.sc {
+   display: flex;
+   justify-content: center;
+   margin-top: 1em;   
+}
+
+.sc img {
+    opacity:0.8;
+    margin-left:10px;
+}
+
+.sc img:hover {
+  opacity: 1;
+}
