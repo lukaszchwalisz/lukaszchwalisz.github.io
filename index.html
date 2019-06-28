@@ -6,29 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="gabinet.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=latin-ext" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap&subset=latin-ext" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=latin-ext" rel="stylesheet">  
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="gabinet.css">
   </head>
 <body>
-
-<div id="pojemnik">  
-  <div id="bialy"></div>
-  <div id="czarny"></div>
   <script>
    
     $(document).ready(function(){
   
   $("#czarny").on({
   
-    click: function(){
+    click: function (){
       $("body").css("background-color", "black");
-      $("div").css("border-color", "white");
-      $("h4").css("color", "white");
-      $("h2, h3").css("color", "yellow");
+      $("div").css("border-color", "black");
+      $("h2, h3, h4, h5").css("color", "yellow");
       $("li, p, a").css("color", "white");
-      $("#fbico").css("background-color", "darkgrey");
-      $(".header").css("background-color", "darkgrey");
-                 
+      $("#footer").css("background-color", "darkgrey");
+      $("#header").css("background-color", "darkgrey");
+      $(".navbar a").css("color", "#111");        
      }  
   });
 
@@ -37,9 +38,10 @@ $("#bialy").on({
     click: function(){
       $("body").css("background-color", "white");
       $("div").css("border-color", "black");
-      $("h4, h3, h2, li, p, a").css("color", "black");
-      $("#fbico").css("background-color", "aliceblue");
-      $(".header").css("background-color", "yellow");       
+      $("h5, h4, h3, h2, li, p, a").css("color", "black");
+      $("#footer").css("background-color", "lightgrey");
+      $("#header").css("background-color", "yellow");  
+
      }  
   });
 
@@ -47,30 +49,65 @@ $("#bialy").on({
 
 </script>
 
-    <div class="navbar">
-      <a href="index.html"><div class="gabinet">Gabinet</div></a>
-      <a href="omnie.html"><div class="gabinet">O mnie</div></a>
-      <a href="psychoterapia.html"><div class="gabinet">Psychoterapia</div></a>
-      <a href="warsztaty.html"> <div class="gabinet">Warsztaty</div> </a>
-      <a href="artykuly.html"> <div class="gabinet">Artykuły</div></a>
-      <a href="wydarzenia.html"><div class="gabinet">Wydarzenia</div></a>
-    </div>
-        
-    <div style="clear:both"></div>
+<!-- boostrap navbar --> 
 
-<div class="header">
-   <div id="cytat">
-    <h2> "Nieświadomość jest starsza od świadomości. Jest pierwotnym stanem, z którego ciągle na 
-    nowo wyłania się świadomość" </h2>
-    <p>C. G. Jung "Kindertraumseminar, 1938/1939"</p>
+<div id="pojemnik"></div>
+
+<nav class="navbar navbar-expand-sm bg-white navbar-light">
+  <div id="kwadrat"></div>
+  <a class="navbar-brand" href="index.html" id="nazwa" >Gabinet Łukasz Chwalisz</a>
+  <!-- <div id="nazwa"></div> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+        
+  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="omnie.html">O mnie</a>
+      </li>
+        <li class="nav-item">
+      <a class="nav-link" href="psychoterapia.html">Psychoterapia</a>
+      </li>  
+        
+      <li class="nav-item">
+        <a class="nav-link" href="warsztaty.html">Warsztaty</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="artykuly.html">Artykuły</a>
+      </li>    
+        <li class="nav-item">
+        <a class="nav-link" href="wydarzenia.html">Wydarzenia</a>
+      </li>
+      </ul>
+    </div>  
+     <div id="bialy"></div> <div id="czarny"></div>
+    </nav>
+ 
+
+<!-- header -->
+
+<div class="jumbotron jumbotron-fluid bg-muted" id="header">
+  <div class="container">
+    <h3>"Nieświadomość jest starsza od świadomości. Jest pierwotnym stanem, z którego ciągle na nowo wyłania się świadomość"</h3>
+  <hr class="my-4">
+  <p>C. G. Jung "Kindertraumseminar, 1938/1939"</p>
   </div>
+  
 </div>
 
+<!-- treść -->
 
-<div id="lewyobr"> 
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3">
+      
     <img src="./obr/monument.jpg" alt="monument" width="100%"> 
-  </div>
-
+  
+</div>
+    
+<div class="col-sm-6">
 
 <div id="tresc">
 
@@ -97,7 +134,7 @@ $("#bialy").on({
       60-803 Poznań, ul. Polna 74/9, NIP 7792237217</p>
 
     <h3>Gabinet.</h3>
-    <p>Obecnie przyjmuję w gabinetach w Poznaniu dzięki uprzejmości <a href="https://www.pracowniakreska.com" style="text-align: left;">Pracowni Rozwoju Osobistego "Kreska".</a></p>
+    <p>Obecnie przyjmuję w gabinetach w Poznaniu dzięki uprzejmości <a href="https://www.pracowniakreska.com">Pracowni Rozwoju Osobistego "Kreska".</a></p>
      <ul>
       <li>ul. Grunwaldzka 37a/15</li>
       <li>ul. Marcelińska 62b/23</li>
@@ -106,22 +143,17 @@ $("#bialy").on({
 
  </div>
 
-    
-  
-    <div style="clear:both"></div>   
-        
-    <footer> 
-      <div id="fbico">
-        <a href="https://www.facebook.com/psychoterapeuta.lukaszchwalisz/" target="_blank"><img src="./obr/fb.png" alt="fb"></a>
-        <p> © 2019 Łukasz Chwalisz. <a href="http://gnu.org.pl/text/licencja-gnu.html" target="_blank">GNU General Public License (GPL). </a>
-        </p>
-      </div>
-    
-    </footer>   
-    
- </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
-             
+<!-- footer -->   
+<div class="jumbotron text-center bg-muted" style="margin-bottom:0px" id="footer"> 
+  <a href="https://www.facebook.com/psychoterapeuta.lukaszchwalisz/" target="_blank"><img src="./obr/fb.png" alt="fb" width="5%"></a>
+      <p> © 2019 Łukasz Chwalisz. <a href="http://gnu.org.pl/text/licencja-gnu.html" target="_blank">GNU General Public License (GPL). </a>
+      </p>
+</div>
+
+         
 </body>
 </html>
-

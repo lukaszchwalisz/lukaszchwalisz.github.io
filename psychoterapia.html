@@ -5,67 +5,110 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="gabinet.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=latin-ext" rel="stylesheet"> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-  <body>
-  <div id="pojemnik">  
-      <div id="bialy"></div>
-      <div id="czarny"></div>
-      <script>
-        $(document).ready(function(){
-      $("#czarny").on({
-      
-        click: function(){
-          $("body").css("background-color", "black");
-          $("div").css("border-color", "white");
-          $("navbar, h4").css("color", "black");
-          $("h2, h3").css("color", "yellow");
-          $("li, p, a").css("color", "white");
-          $("#fbico").css("background-color", "darkgrey");
-          $(".header").css("background-color", "darkgrey");
-         }  
-      });
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap&subset=latin-ext" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=latin-ext" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="gabinet.css">
+  </head>
+<body>
+  <script>
+   
+    $(document).ready(function(){
+  
+  $("#czarny").on({
+  
+    click: function (){
+      $("body").css("background-color", "black");
+      $("div").css("border-color", "black");
+      $("h5,h4,h3,h2,strong").css("color", "yellow");
+      $("li, p, a").css("color", "white");
+      $("#footer").css("background-color", "darkgrey");
+      $("#header").css("background-color", "darkgrey");
+      $(".navbar a").css("color", "#111");        
+     }  
+  });
 
-   $("#bialy").on({
+$("#bialy").on({
   
     click: function(){
       $("body").css("background-color", "white");
       $("div").css("border-color", "black");
-      $("h4, h3, h2, li, p, a").css("color", "black");
-      $("#fbico").css("background-color", "aliceblue");
-      $(".header").css("background-color", "yellow");         
+      $("h5,h4, h3, h2, li, p, a, strong").css("color", "black");
+      $("#footer").css("background-color", "lightgrey");
+      $("#header").css("background-color", "yellow");  
+
      }  
   });
 
 });
-</script>   
-      <div class="navbar">
-          <a href="index.html"><div class="gabinet">Gabinet</div></a>
-          <a href="omnie.html"><div class="gabinet">O mnie</div></a>
-          <a href="psychoterapia.html"><div class="gabinet">Psychoterapia</div> </a>
-          <a href="warsztaty.html"> <div class="gabinet">Warsztaty</div> </a>
-          <a href="artykuly.html"> <div class="gabinet">Artykuły</div></a>
-          <a href="wydarzenia.html"><div class="gabinet">Wydarzenia</div></a>
-      </div>
 
-  <div class="header">
-   <div id="cytat">
-    <h3> "Celem jest poznanie chorego. Cel mieści się w nieskończoności, nie może być więc oznaczonej drogi do niego. Każda droga jest inna i dobra i zła zarazem, jedna bliżej, inna dalej prowadzi. Psychiatra na swojej drodze wie tylko tyle, że nie ma końca.."</h3>
-   <p>Antoni Kępiński, "Poznanie chorego"</p>
-   </div>
+</script>
+<!-- boostrap navbar --> 
+
+<div id="pojemnik"></div>
+<nav class="navbar navbar-expand-sm bg-white navbar-light">
+    <div id="kwadrat"></div>
+  <a class="navbar-brand" href="index.html" id="nazwa" >Gabinet Łukasz Chwalisz</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+        
+  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="omnie.html">O mnie</a>
+      </li>
+        <li class="nav-item">
+      <a class="nav-link" href="psychoterapia.html">Psychoterapia</a>
+      </li>  
+        
+      <li class="nav-item">
+        <a class="nav-link" href="warsztaty.html">Warsztaty</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="artykuly.html">Artykuły</a>
+      </li>    
+        <li class="nav-item">
+        <a class="nav-link" href="wydarzenia.html">Wydarzenia</a>
+      </li>
+      </ul>
+    </div>  
+     <div  id="bialy"></div> <div id="czarny"></div>
+    </nav>
+    
+       
+
+<!-- header -->
+
+<div class="jumbotron jumbotron-fluid bg-muted" id="header">
+  <div class="container">
+    <h4>"Celem jest poznanie chorego. Cel mieści się w nieskończoności, nie może być więc oznaczonej drogi do niego. Każda droga jest inna i dobra i zła zarazem, jedna bliżej, inna dalej prowadzi. Psychiatra na swojej drodze wie tylko tyle, że nie ma końca.."</h4>
+  <hr class="my-4">
+  <p>Antoni Kępiński, "Poznanie chorego"</p>
   </div>
-
-<div id="lewyobr">
-    <img src="./obr/gab3.jpg" alt="gabinet" width="100%"> 
-    <img src="./obr/gab2.jpg" alt="gabinet" width="100%"> 
 </div>
 
+  <!-- treść -->
+
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3">
+      
+    <img src="./obr/gab3.jpg" alt="gabinet" width="100%" style="margin-bottom: 30px;"> 
+    <img src="./obr/gab2.jpg" alt="gabinet" width="100%"> 
+  
+</div>
+    
+<div class="col-sm-6">
 
 <div id="tresc">
   <h2>Oferta dla pacjentów.</h2>
-  <p>Aktualny zakres działalności gabinetu psychologicznego.<p>
+  <p>Aktualny zakres działalności gabinetu psychologicznego.</p>
   <hr> 
 
   <h3>Psychoterapia indywidualna.</h3>
@@ -138,18 +181,22 @@ NIP: 7792237217, REGON: 363750665</p>
 </ol>
 </div>
 
+    
+ </div>
 
-<div style="clear:both"></div> 
-<footer> 
-    <div id="fbico">
-      <a href="https://www.facebook.com/psychoterapeuta.lukaszchwalisz/" target="_blank"><img src="./obr/fb.png" alt="fb"></a>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+
+<!-- footer -->
+   
+<div class="jumbotron text-center bg-muted" style="margin-bottom:0px" id="footer"> 
+  <a href="https://www.facebook.com/psychoterapeuta.lukaszchwalisz/" target="_blank"><img src="./obr/fb.png" alt="fb" width="5%"></a>
       <p> © 2019 Łukasz Chwalisz. <a href="http://gnu.org.pl/text/licencja-gnu.html" target="_blank">GNU General Public License (GPL). </a>
       </p>
-    </div>
-  
-  </footer>  
+</div>
 
- </div>
+
   
 </body>
 </html>
