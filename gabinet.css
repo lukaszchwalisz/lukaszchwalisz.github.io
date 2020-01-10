@@ -144,8 +144,7 @@ margin-left: 1em;
 
 /* lewy obrazek */
 #lewyobr {
-    float:left;
-    width: 200px;
+    
     margin-top: 30px;
     margin-left: 210px;
     margin-right: 20px;
@@ -155,10 +154,8 @@ margin-left: 1em;
 
 
 #tresc {
-    float: left;
     text-align: justify;
-    width: 700px;
-    margin-left: 30px;
+   
 }
 
 #tresc ul li {
@@ -197,5 +194,13 @@ margin-left: 1em;
 /* bootstrap */
 
 .gap {
-  margin-top: 50px;
+  margin-top: 40px;
+}
+
+img {
+width: 80%;
+}
+
+#footer img {
+  width: 3%;
 }
