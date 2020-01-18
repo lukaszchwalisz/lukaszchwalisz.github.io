@@ -1,7 +1,7 @@
 body {
     margin:0px;
     padding:0px;
-    /* background-color:#FFF5EE; */
+    background-color:#FFF5EE;
     display: inline;
     font-size: 16px;
     font-family:'Poppins', sans-serif;
@@ -75,40 +75,12 @@ padding: 0em;
  margin: 0;
  padding: 0;
 }
-
-
-#bialy {
-float: inline-end ; 
-width: 1em;
-height:1em;
-border-color: black;
-border: 1px solid;
-border-radius: 50%;
-background-color: white;
-margin-top: .5em;
-margin-right: 0em;
-margin-left: 1em;
-}
-
-#czarny {
-  float: inline-end; 
-  width: 1em;
-  height:1em;
-  border-color: black;
-  border: 1px solid;
-  border-radius: 50%;
-  background-color: black;
-  margin-top: .5em;
-  margin-right: 1em;
-}
-
 /* główka*/
+
 #footer {
   margin-top: 0px;
   background-color: lightgrey;
 }
-
-
 
 #cytat {
   text-align:center;
@@ -118,29 +90,7 @@ margin-left: 1em;
   justify-content: center;
  }
 
-/* stopka */ 
 
-#fbico p {
-  margin-top: 0em;
-  margin-bottom: 0;
-  padding: 1em; 
-  color: black;
-  text-align: center;
-  }
-
-#fbico a {
-  color:black;
-  }
-
-#fbico img {
-   width: 3%;
-   margin-top: 20px;
-}
-
-#fbico  {
-  text-align: center;
-  background-color: aliceblue;
-}
 
 /* lewy obrazek */
 #lewyobr {
@@ -170,26 +120,6 @@ margin-left: 1em;
 
 /*obrazy na stronie */
 
-#klocki {
-    float: left;
-    display: flex; 
-    flex-wrap: wrap;
-}
-
-.sc {
-   display: flex;
-   justify-content: center;
-   margin-top: 1em;   
-}
-
-.sc img {
-    opacity:0.8;
-    margin-left:10px;
-}
-
-.sc img:hover {
-  opacity: 1;
-}
 
 /* bootstrap */
 
