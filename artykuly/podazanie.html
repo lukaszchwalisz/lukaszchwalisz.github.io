@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Podążanie</title>
+  <title>Dwa filmy.</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="gabinet.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap&subset=latin-ext" rel="stylesheet"> 
    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=latin-ext" rel="stylesheet">  
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../gabinet.css">
-  </head>
+</head>
+
 <body>
 
 <!-- boostrap navbar --> 
@@ -50,42 +49,7 @@
       </li>
       </ul>
     </div>  
-     <div id="bialy"></div> <div id="czarny"></div>
-    </nav>
-
-      
-    <script>
-   
-      $(document).ready(function(){
-    
-    $("#czarny").on({
-    
-      click: function (){
-        $("body").css("background-color", "black");
-        $("div").css("border-color", "black");
-        $("h5,h4,h3,h2,strong,a").css("color", "yellow");
-        $("li, p, em").css("color", "white");
-        $("#footer").css("background-color", "darkgrey");
-        $("#header").css("background-color", "darkgrey");
-        $(".navbar a").css("color", "#111");        
-       }  
-    });
-  
-  $("#bialy").on({
-    
-      click: function(){
-        $("body").css("background-color", "white");
-        $("div").css("border-color", "black");
-        $("h5,h4, h3, h2, li, p, a, strong,em").css("color", "black");
-        $("#footer").css("background-color", "lightgrey");
-        $("#header").css("background-color", "yellow");  
-  
-       }  
-    });
-  
-  });
-  
-  </script>
+</nav>
           
 <!-- header -->
 
@@ -106,21 +70,20 @@
 
 <!-- new content -->
 
-<div class="container">
-    <div class="row">
+     
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div id="tresc"> 
+         
+              <h2><a href="../artykuly.html">Podążanie</a> </h2>
+          </h2>
+          <p>(wpis z 18.01.2018 r.)</p>
+          <hr>
       
-      <div class="col-sm">
-              
-      <img src="../obr/trampki.jpeg" alt="trampki" width="100%"> 
-    
-  </div>
-  <div class="col-sm">
-  <div id="tresc"> 
-    <div id="podazanie">  
-      <h2><a href="../artykuly.html">Podążanie</a> </h2>
-      
-      <p>(wpis z 18.01.2018 r.)</p>
-      <hr>
+          <img src="../obr/trampki.jpeg" alt="trampki" width="100%"> 
+          <hr>
+
 
       <p>Podążanie za pacjentem. Za jego/jej myślą, uczuciem, punktem widzenia.</p>
     <p>Wymaga cierpliwości, a przede wszystkim powściągliwości..</p>
@@ -165,14 +128,10 @@
     
     <p>Podążać za pacjentem.</p>
 
-
-
 </div>
 </div>
-
-    </div>
-   </div>
-   </div>
+</div>
+</div>
    <!-- footer -->
    
 <div class="jumbotron jumbotron-fluid text-center bg-muted" style="margin-bottom:0px" id="footer"> 
