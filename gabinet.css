@@ -143,4 +143,7 @@ margin-bottom: 1em;
 .list-group a {
   background-color:#FFF5EE;
 }
+.list-group a:hover{
+  background-color:white;
+}
 
