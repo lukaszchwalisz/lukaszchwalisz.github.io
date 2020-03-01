@@ -1,9 +1,9 @@
 body {
     margin:0px;
     padding:0px;
-    background-color:#FFF5EE;
+    background-color: whitesmoke;
     display: inline;
-    font-size: 14px;
+    font-size: 16px;
     font-family:'Poppins', sans-serif;
     }
 
@@ -12,8 +12,7 @@ div {
     margin-bottom:0px;
     text-align: justify;
     text-justify: inter-word;
-    
-}
+    }
 
 /* boostrap navbar */
 .nav-link  {
@@ -22,12 +21,7 @@ div {
            
 }
 
- .navbar-brand {
-           font-family: 'Poiret One', cursive;
-           font-size: 30px;
-           
- }
-
+ /* logo strony */
  #nazwa { 
       font-family: 'Marck Script', cursive;
       font-size: 25px;
@@ -41,28 +35,18 @@ div {
       height: 1em;
       float: inline-start;
 }      
- .jumbotron {
-  background-color: #ffff1a;
-}
 
+ .jumbotron {
+  background-image: url("./obr/fallgreen.jpg");
+  background-size: cover;
+  
+}
 
 /* nowy navbar */
 .navbar { 
 display: flex;
 justify-content:center;
 padding: 0em;
-}
-
-.gabinet {
- /* margin-right: 1em; */
-  padding: 14px 16px;
-  font-size: 25px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Lobster', cursive;
-
 }
 
 
@@ -75,6 +59,7 @@ padding: 0em;
  margin: 0;
  padding: 0;
 }
+
 /* główka*/
 
 #footer {
@@ -90,18 +75,11 @@ padding: 0em;
   justify-content: center;
  }
 
-/* lewy obrazek */
-#lewyobr {
-    margin-top: 30px;
-    margin-left: 210px;
-    margin-right: 20px;
-}
 
 /* tekst na stronie */ 
 
 #tresc {
     text-align: justify;
-   
 }
 
 #tresc ul li {
@@ -114,18 +92,18 @@ padding: 0em;
     text-decoration: none;
 }
 
-/*obrazy na stronie */
-
-
 /* bootstrap */
 
 .gap {
   margin-top: 40px;
 }
 
-img {
+.obrazek img {
   width: 75%;
-}
+  height: 50%;
+} 
+
+
 #warsztaty img  {
 width: 50%;
 margin-bottom: 1em;
@@ -141,7 +119,7 @@ margin-bottom: 1em;
 }
 
 .list-group a {
-  background-color:#FFF5EE;
+  background-color:whitesmoke;
 }
 .list-group a:hover{
   background-color:white;
