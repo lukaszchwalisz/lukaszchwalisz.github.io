@@ -39,6 +39,7 @@ div {
  .jumbotron {
   background-image: url("./obr/fallgreen.jpg");
   background-size: cover;
+  height: 300px;
   
 }
 
