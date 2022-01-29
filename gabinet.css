@@ -114,9 +114,9 @@ margin-bottom: 1em;
   width: 3%;
 }
 
-.card {
+.card-group {
   margin-bottom: 1em;
-  display: inline-block;
+
 }
 
 .list-group a {
