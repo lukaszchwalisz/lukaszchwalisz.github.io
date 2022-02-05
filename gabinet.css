@@ -115,8 +115,16 @@ margin-bottom: 1em;
 }
 
 .card {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+  margin-left: 0px;
+  margin-right:10px;
+  width: 30rem;
+  height: 30rem;
   display: inline-block;
+}
+
+.card-group {
+  margin-bottom: 1rem;
 }
 
 .list-group a {
