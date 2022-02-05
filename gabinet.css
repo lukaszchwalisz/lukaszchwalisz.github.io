@@ -104,7 +104,6 @@ padding: 0em;
   height: 50%;
 } 
 
-
 #warsztaty img  {
 width: 50%;
 margin-bottom: 1em;
@@ -119,7 +118,7 @@ margin-bottom: 1em;
   margin-left: 0px;
   margin-right:10px;
   width: 30rem;
-  height: 30rem;
+  /* height: 20rem; */
   display: inline-block;
 }
 
@@ -127,6 +126,9 @@ margin-bottom: 1em;
   margin-bottom: 1rem;
 }
 
+.card-text {
+  font-size: 14px;
+}
 .list-group a {
   background-color:whitesmoke;
   margin-bottom: 1rem;
