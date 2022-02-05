@@ -96,7 +96,7 @@ padding: 0em;
 /* bootstrap */
 
 .gap {
-  margin-top: 40px;
+  margin-bottom: 1rem;
 }
 
 .obrazek img {
@@ -129,6 +129,7 @@ margin-bottom: 1em;
 
 .list-group a {
   background-color:whitesmoke;
+  margin-bottom: 1rem;
 }
 .list-group a:hover{
   background-color:white;
